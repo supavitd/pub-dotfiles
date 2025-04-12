@@ -1,3 +1,5 @@
+format = '$all${custom.devpod}$character'
+
 [aws]
 symbol = "  "
 
@@ -169,3 +171,14 @@ symbol = " "
 
 [zig]
 symbol = " "
+
+[container]
+disabled = true
+
+[custom.devpod]
+symbol = "⬢ "
+format = "[$symbol\\[(DevPod $output)\\] ]($style)"
+style = "bold red dimmed"
+command = 'echo $DEVPOD_WORKSPACE_ID'
+description = 'Devpod workspace id, if inside a devpod container'
+when = ''' test "$DEVPOD" = true '''
