@@ -20,8 +20,8 @@ return {
         { '<leader>h', group = 'Git [H]unk', mode = { 'n', 'v' } },
       },
     },
-    -- config = function()
-    --   -- document existing key chains
+    config = function()
+      -- document existing key chains
     --   require('which-key').register {
     --     -- ['<leader>c'] = { name = '[C]ode', _ = 'which_key_ignore' },
     --     -- ['<leader>d'] = { name = '[D]ocument', _ = 'which_key_ignore' },
@@ -45,7 +45,7 @@ return {
     --     { "<leader>w", group = "[W]orkspace" },
     --     { "<leader>w_", hidden = true },
     --   }
-    -- end,
+    end,
   },
   {
     -- Adds git related signs to the gutter, as well as utilities for managing changes

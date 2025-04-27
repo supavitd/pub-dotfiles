@@ -68,6 +68,9 @@ else
   -- NOTE: You should make sure your terminal supports this
   vim.o.termguicolors = true
 
+  vim.opt.list = true
+  vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+
   -- [[ Basic Keymaps ]]
 
   -- Keymaps for better default experience
