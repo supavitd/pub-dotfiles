@@ -101,7 +101,12 @@ else
   local number_toggle = function()
     vim.o.relativenumber = not vim.o.relativenumber
   end
-  vim.keymap.set('n', '<C-l>', number_toggle)
+  -- vim.keymap.set('n', '<C-l>', number_toggle)
+
+  vim.keymap.set('n', '<C-h>', '<C-w>h', { noremap = true })
+  vim.keymap.set('n', '<C-j>', '<C-w>j', { noremap = true })
+  vim.keymap.set('n', '<C-k>', '<C-w>k', { noremap = true })
+  vim.keymap.set('n', '<C-l>', '<C-w>l', { noremap = true })
 
   -- vim.g.clipboard = {
   --   name = 'OSC 52',
